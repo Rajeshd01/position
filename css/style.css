@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid black;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+nav a {
+  color: whitesmoke;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.background-div {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.background-div-1 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_640.jpg"); /* Replace with your first image URL */
+}
+
+.background-div-2 {
+  background-image: url("https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_640.jpg"); /* Replace with your second image URL */
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.background-div-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
